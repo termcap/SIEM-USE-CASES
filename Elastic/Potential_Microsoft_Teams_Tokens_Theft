@@ -1,0 +1,3 @@
+process where process.args like ("*\\Microsoft\\Teams\\Cookies", "*\\Microsoft\\Teams\\Local Storage\\*")
+
+# An attacker with local access on a system where Microsoft Teams is installed could steal the tokens and use them to log into the victim's account.
