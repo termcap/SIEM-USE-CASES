@@ -1,0 +1,3 @@
+iam where event.code == 4720 and not agent.name == "AD-SERVER-NAME"
+
+# A local user account has been added on a computer
