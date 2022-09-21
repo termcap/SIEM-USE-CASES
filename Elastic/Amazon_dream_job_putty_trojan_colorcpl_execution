@@ -1,0 +1,6 @@
+process where event.type in ("start", "process_started", "info") and
+process.name: "colorcpl.exe" and 
+(process.executable like~ "PackageColor\\colorcpl.exe" or process.args_count >= 1 )
+
+#Execution of colorcpl.exe from an unusual directory like C:\ProgramData\PackageColor is indicative of the Amazon putty Trojan attack.
+#Execution of colorcpl.exe from any location with command line arguments is indicative of the Amazon putty Trojan attack (Attackers may change the name of the "PackageColor" directory in the future).
